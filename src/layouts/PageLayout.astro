@@ -9,13 +9,13 @@ type Props = {
   description: string;
 };
 
-const { title, description } = Astro.props;
+const { description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Head title={`${title} | ${SITE.NAME}`} description={description} />
+    <Head title={SITE.NAME} description={description} />
   </head>
   <body>
     <Header />

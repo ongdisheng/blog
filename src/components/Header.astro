@@ -1,7 +1,6 @@
 ---
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
-import { SITE } from "@consts";
 ---
 
 <header>
@@ -9,7 +8,7 @@ import { SITE } from "@consts";
     <div class="flex flex-wrap gap-y-2 justify-between">
       <Link href="/" underline={false}>
         <div class="font-semibold">
-          {SITE.NAME}
+          王荻升
         </div>
       </Link>
       <nav class="flex gap-1">
@@ -19,12 +18,12 @@ import { SITE } from "@consts";
         <span>
           {`/`}
         </span>
-        <Link href="/work">
+        {/* <Link href="/work">
           work
         </Link>
         <span>
           {`/`}
-        </span>
+        </span> */}
         <Link href="/projects">
           projects
         </Link>
