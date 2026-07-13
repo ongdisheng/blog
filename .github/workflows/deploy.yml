@@ -21,13 +21,6 @@ jobs:
         uses: actions/checkout@v5
       - name: Install, build, and upload site
         uses: withastro/action@v5
-        # with:
-          # path: . # The root location of the Astro project inside the repository. (optional)
-          # node-version: 24 # The specific version of Node that should be used to build the site. Defaults to 22. (optional)
-          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build the site. Automatically detected based on the lockfile. (optional)
-          # build-cmd: pnpm run build # The command to run to build the site. Runs the package build script/task by default. (optional)
-        # env:
-          # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
 
   deploy:
     needs: build
